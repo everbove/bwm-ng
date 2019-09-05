@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "bwm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -137,5 +137,15 @@
       }
     }
   },
-  "defaultProject": "bmw-ng"
+  "defaultProject": "bmw-ng",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    },
+    "@schematics/angular": {
+      "component": {
+        "spec": false
+      }
+    }
+  }
 }
